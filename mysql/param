@@ -1,0 +1,3 @@
+CONTAINER_NAME=mysql
+IMAGE_NAME=mamaledoboi/mysql:latest
+IMAGE_NAME=mamaledoboi/mysql:latest1
