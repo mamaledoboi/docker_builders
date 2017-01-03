@@ -3,7 +3,7 @@ echo "IMAGE_NAME is $IMAGE_NAME"
 CONTAINER_NAME=`cat param | grep CONTAINER_NAME | tail -1 | awk -F '=' '{print $2}'CONTAINER_NAME`
 echo "CONTAINER_NAME is $CONTAINER_NAME"
 
-docker pull ${image_name}
+#docker pull ${image_name}
 docker rm -f $CONTAINER_NAME
 
 docker run --detach \
@@ -13,5 +13,6 @@ docker run --detach \
 	--publish 3306:3306 \
 	--env TZ=Asia/Shanghai \
 	--env LANG=en_US.UTF-8 \
-	--MYSQL_ROOT_PASSWORD=qwer1234 \
+	-v /Users/admin/myDockers/datas/mysql:/var/lib/mysql \
+	-e MYSQL_ROOT_PASSWORD=qwer1234 \
 	$IMAGE_NAME
