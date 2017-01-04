@@ -7,15 +7,14 @@ CONTAINER_NAME=`cat param | grep CONTAINER_NAME | tail -1 | awk -F '=' '{print $
 echo "CONTAINER_NAME is $CONTAINER_NAME"
 
 #Record
-date=`date +%Y-%m-%d %H:%M:%S`
+Date=`date "+%Y-%m-%d %H:%M:%S"`
 echo "IMAGE_NAME is $IMAGE_NAME"
-echo "$date IMAGE_NAME=$IMAGE_NAME" >> param
+echo "$Date IMAGE_NAME=$IMAGE_NAME" >> param
 
 #aseemble files to workspace
 rm -rf build_env
 mkdir build_env
 cp param build_env
-cp -r add/* build_env
 cp Dockerfile build_env
 cd build_env
 
@@ -23,17 +22,7 @@ cd build_env
 #if has, repalce above
 
 #Build
-docker build -t $IMAGE_NAME
-if [[ &? != 0 ]];then
-	echo "Fail to build image $IMAGE_NAME";
-else
-	echo "Build image $IMAGE_NAME Success"
-fi
+docker build -t $IMAGE_NAME .
 
 #Push
 docker push $IMAGE_NAME
-if [[ &? != 0 ]];then
-	echo "Fail to push image $IMAGE_NAME";
-else
-	echo "Push image $IMAGE_NAME Success"
-fi

@@ -1,1 +1,1 @@
-docker pull mysql:8.0.0
+FROM mysql:8.0.0
