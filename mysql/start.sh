@@ -16,3 +16,9 @@ docker run --detach \
 	-v /Users/admin/myDockers/datas/mysql:/var/lib/mysql \
 	-e MYSQL_ROOT_PASSWORD=qwer1234 \
 	$IMAGE_NAME
+
+if [[ $? != 0 ]];then
+    echo "Fail to boot image $IMAGE_NAME";
+else
+    echo "Boot image $IMAGE_NAME Success"
+fi
