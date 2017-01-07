@@ -1,0 +1,5 @@
+CONTAINER_NAME=nexus
+IMAGE_NAME=sonatype/nexus3:1.0
+2017-01-05 11:52:52 IMAGE_NAME=sonatype/nexus3:1.0
+2017-01-05 11:53:21 IMAGE_NAME=sonatype/nexus3:1.0
+2017-01-05 15:08:31 IMAGE_NAME=sonatype/nexus3:1.0
