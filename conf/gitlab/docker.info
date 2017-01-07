@@ -1,2 +1,2 @@
-CONTAINER_NAME=gitlab
+CONTAINER_NAME=gitlab_new
 IMAGE_NAME=mamaledoboi/gitlab
