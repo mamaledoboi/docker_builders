@@ -10,9 +10,7 @@ sh fetch_docker_info.sh
 docker pull ${IMAGE_NAME}
 docker rm -f $CONTAINER_NAME
 
-DOCKER_RUN_CMD=cat $dcoker_run_file
-result=$($DOCKER_RUN_CMD) $IMAGE_NAME
-echo $result
+sh docker_run.sh
 
 if [[ $? != 0 ]];then
     echo "Fail to boot image $IMAGE_NAME";
