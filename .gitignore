@@ -12,6 +12,6 @@
 hs_err_pid*
 
 #build_env and param
-*/build_env/
+**/boot_env/
 */param
 */*.log
