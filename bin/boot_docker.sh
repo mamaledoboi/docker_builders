@@ -45,8 +45,7 @@ echo "CONTAINER_NAME is $CONTAINER_NAME"
 
 #log
 Date=`date "+%Y-%m-%d %H:%M:%S"`
-echo "IMAGE_NAME is $IMAGE_NAME"
-echo "$Date IMAGE_NAME=$IMAGE_NAME" >> ${LOG_FILE}
+echo "$Date boot IMAGE $IMAGE_NAME" >> ${LOG_FILE}
 
 ##### start to boot #####
 docker pull ${IMAGE_NAME}

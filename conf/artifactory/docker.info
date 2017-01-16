@@ -1,2 +1,2 @@
-CONTAINER_NAME=gitlab
-IMAGE_NAME=mamaledoboi/gitlab
+CONTAINER_NAME=artifactory
+IMAGE_NAME=mamaledoboi/artifactory

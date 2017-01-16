@@ -1,1 +1,1 @@
-FROM gitlab/gitlab-ce
+FROM mattgruter/artifactory:latest
