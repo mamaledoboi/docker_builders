@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo docker run  \
-	--hostname docker.mysql \
+	--hostname mysql.tigerson.com \
 	--name $CONTAINER_NAME \
 	--publish 3306:3306 \
 	--env TZ=Asia/Shanghai \
