@@ -1,2 +1,2 @@
 CONTAINER_NAME=artifactory
-IMAGE_NAME=mamaledoboi/artifactory
+IMAGE_NAME=mamaledoboi/artifactory:1.0
