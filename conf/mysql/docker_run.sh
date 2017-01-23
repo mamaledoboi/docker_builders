@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo docker run --detach \
+docker run --detach \
 	--hostname mysql.tigerson.com \
 	--name $CONTAINER_NAME \
 	--publish 3306:3306 \
